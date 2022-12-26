@@ -1,3 +1,234 @@
 body {
-    background-color: rgb(34, 67, 95);
+  background-color: rgb(244, 203, 220);
+  background-size: cover !important;
+  background-position: center  !important;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
+  width: 100vw !important;
+}
+
+h1, h2, h3 , h4, h5, h6 {
+  font-family: 'Times New Roman', Times, serif;
+}
+p {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+/* Jumbotron  */
+.jumbotron {
+  background-image: url(../images/Minimalist.jpg);
+  background-size: cover;
+  height: calc(75vh - 45px);
+  display: flex;
+  justify-content: center;
+  align-items: unset;
+}
+
+
+
+
+.jumbotron .lead {
+  
+}
+
+
+.jumbotron h1 { 
+  text-align: center; /* centers the heading */
+  color: rgb(33, 1, 1);
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+section > div {
+  padding: 0 40px;
+  flex-wrap: wrap;
+}
+
+ section .label {
+  display: flex;
+  flex-basis: 15%;
+  min-width: 150px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  text-align: right;
+  justify-content: flex-end;
+  border-right: 8px solid var(--text-color);
+}
+
+section .label h2 {
+  line-height: 1.2em;
+  font-size: 3em;
+}
+
+section .content {
+  display: flex;
+  flex-grow: 1;
+}
+
+
+section#about-me .content {
+  flex-wrap: nowrap;
+}
+
+
+
+section .content p {
+  line-height: 1.7em;
+  font-size: 1.45em;
+  margin-left: 40px;
+}
+
+
+section .content img {
+  width: 300px;
+  height: 500px;
+  border-radius: var(--border-radius);
+  object-fit: cover;
+}
+
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+
+.container {
+  width: 100%; 
+  background-image:  #2196F3;
+}
+
+.skills {
+  text-align: right; 
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  color: white; 
+}
+
+.html {width: 90%; background-color: #2196F3;}
+.css {width: 80%; background-color: #2196F3;} 
+.js {width: 65%; background-color: #2196F3;} 
+.react {width: 60%; background-color: #2196F3;} 
+
+section#work .content {
+  justify-content: space-between;
+}
+
+section#work .content a.card {
+  text-decoration: none;
+  height: 300px;
+  border: 8px solid var(--secondary-color);
+  margin-top: 20px;
+  flex-basis: 49%;
+  background-position: center;
+  background-size: cover;
+}
+
+section #work .content a.card:first-child {
+  width: 100%;
+  flex-basis: 100%;
+  margin-top: 0;  
+}
+
+section#work .content .overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  background-color: rgba(13, 170, 180, 0.2);
+}
+
+section#work .content .overlay:hover {
+  background-color: transparent;
+}
+
+
+section#work .content a.card .work-label {
+  line-height: 1.8em;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  padding: 20px;
+  height: fit-content;
+  position: relative;
+  bottom: 40px;
+  width: auto;
+}
+
+/* Portfolio image backgrounds */
+
+.steam {
+  background-image: url('./../images/steam.jpg');
+}
+
+.netflix {
+  background-image: url('./../images/netflix.jpg');
+}
+
+.bethesda {
+  background-image: url('./../images/bethesda.jpg');
+}
+
+.linkedin {
+  background-image: url('./../images/linkedin.jpg');
+}
+
+.github{
+  background-image: url('./../images/github.jpg');
+}
+
+section#work .content a.card {
+  height: 200px;
+}
+
+section#work .content a.card .work-label {
+  bottom: 10px;
+  padding: 10px 10px 10px 0;
+}
+
+section#contact-me .content ul {
+  flex-direction: column;
+  font-size: 1.2em;
+}
+
+section#contact-me .content ul li {
+  border-bottom: none;
+  padding: 10px 0;
+  margin: 0;
+}
+
+/* Contact links */
+
+section#contact-me .content ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.8em;
+}
+
+section#contact-me .content ul li {
+  border-bottom: 4px solid;
+  padding-bottom: 10px;
+  margin-right: 20px;
+}
+
+section#contact-me .content ul a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+footer {
+  background-color: var(--primary-color);
+  padding: 40px;
+  justify-content: space-between;
 }
